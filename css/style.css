@@ -1,0 +1,292 @@
+/* ====== Fondo general ====== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Adrian8.jpg');
+    /* Cambia la ruta */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+/* ====== Encabezado ====== */
+
+.header {
+    background: rgba(0, 0, 0, 0.3);
+    /* Fondo negro transparente (puedes ajustar opacidad) */
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    /* Quitamos sombra fuerte */
+    border-radius: 12px;
+    /* Le da un estilo suave */
+}
+
+.header .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    /* Para que el logo sea circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #f1c40f;
+    /* dorado llamativo */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    font-size: 1.2em;
+    margin: 0;
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+
+/* ====== Contenedor ====== */
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section h2 {
+    text-align: center;
+    color: #f1c40f;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ====== Botones de servicios ====== */
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-btn {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Transparente con un leve difuminado */
+    backdrop-filter: blur(6px);
+    /* Efecto vidrio */
+    color: #fff;
+    border: 2px solid #f1c40f;
+    /* Borde dorado llamativo */
+    border-radius: 50px;
+    /* Hace los botones ovalados */
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-btn strong {
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #f1c40f;
+}
+
+.service-btn p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: #eee;
+}
+
+.service-btn .price {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #1abc9c;
+    font-size: 1.1em;
+}
+
+
+/* Efecto hover */
+
+.service-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background: rgba(241, 196, 15, 0.15);
+    /* Leve dorado transparente al pasar el cursor */
+    border-color: #1abc9c;
+}
+
+
+/* ====== Footer ====== */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.9);
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+
+/* ====== Redes sociales flotantes ====== */
+
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.social-icons a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+.social-icons a img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    background: rgba(241, 196, 15, 0.25);
+    /* leve dorado al pasar el cursor */
+}
+
+
+/* ====== Video Lateral Izquierdo ====== */
+
+.video-fixed {
+    position: absolute;
+    /* Lo sacamos del flujo pero relativo al body */
+    top: 420px;
+    /* Ajusta este valor según la altura de tu header */
+    left: 20px;
+    /* Separación del borde izquierdo */
+    width: 280px;
+    z-index: 1000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.video-fixed video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+
+/* ====== Productos ====== */
+
+.productos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #f1c40f;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Contenedor de productos */
+
+.productos-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Se acomoda en varias filas si no cabe */
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Botón de producto estilo transparente */
+
+.producto-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    /* Transparente */
+    backdrop-filter: blur(10px);
+    /* Efecto vidrio */
+    border: 2px solid rgba(241, 196, 15, 0.6);
+    /* Dorado semitransparente */
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.producto-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    background: rgba(241, 196, 15, 0.15);
+    /* Dorado translúcido */
+    border-color: rgba(26, 188, 156, 0.7);
+    /* Verde aguamarina suave */
+}
+
+.producto-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* Nombre del producto en dorado */
+
+.producto-btn strong {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #f1c40f;
+    /* Dorado */
+}
+
+
+/* Precio en verde aguamarina */
+
+.producto-btn .price {
+    color: #1abc9c;
+    /* Verde aguamarina */
+    font-weight: bold;
+    font-size: 1rem;
+}
