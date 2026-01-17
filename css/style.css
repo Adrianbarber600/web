@@ -290,3 +290,31 @@ body {
     font-weight: bold;
     font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        /* mejora rendimiento móvil */
+    }
+    .video-fixed {
+        position: static;
+        /* vuelve al flujo normal */
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        top: auto;
+        left: auto;
+        z-index: auto;
+    }
+    .video-fixed video {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+    .container {
+        padding-top: 20px;
+    }
+    .services-list {
+        gap: 15px;
+    }
+}
